@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>文件夹模块和package</p>
+<pre>
+    如果引入的路径是这样的：var foo=require('foo.js');不加./
+    就说名是node默认从一个叫node_modules文件夹下获取的。
+    如果引入的是这样的：var bar=require('bar');
+    引用一个文件夹,从node_modules引用,默认引入的是index.js入口文件
+    当在node_modules/bar文件夹中配置了package.json文件后，就可以指定加载哪个文件了。
+</pre>
+</body>
+</html>

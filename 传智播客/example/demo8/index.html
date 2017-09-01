@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+模块js引用可以直接require，但是文件有时候在各种文件嵌套引入中会出错，这时候为了
+保险，我们使用__dirname绝对路径，nodejs里的，很好用，保证是绝对的路径。
+<p>
+    require()是从当前js文件中出发，引用js模块没问题，但是引入文件的时候，如果是层层引入的时候，这个路径就会出错。
+</p>
+</body>
+</html>

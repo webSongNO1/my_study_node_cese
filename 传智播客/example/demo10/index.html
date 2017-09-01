@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    原生写post处理，比较复杂，要写两个监听，文件上传业务更加复杂，
+    所以哦，使用第三方模块，formidable
+    只要设计文件上传那么form标签要加enctype="multipart/form-data"
+    多文件上传参考http://www.mizuiren.com/479.html
+</pre>
+<form action="http://127.0.0.1:3000/upload" enctype="multipart/form-data" method="post">
+    <label>姓名：<input type="text" name="name"></label>
+    <label>年龄：<input type="text" name="age"></label>
+    <label><input type="file" name="upload" multiple="multiple"></label>
+    <button type="submit">提交</button>
+</form>
+</body>
+</html>

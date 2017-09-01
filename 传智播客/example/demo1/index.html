@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<MARK>创建服务器，解决中文打印</MARK>
+<pre>
+    var http=require('http');
+var fs=require('fs');
+
+http.createServer(function (req,res) {
+    res.writeHead(200,{'Content-Type':'text/html;charset=UTF8'});
+    res.end('你好！');
+}).listen('8800');
+</pre>
+</body>
+</html>
